@@ -1,0 +1,860 @@
+/*
+    MARK: CSS RESET
+*/
+
+/* Simplifico la forma de aplicar tamaños */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Quito el espaciado predeterminado */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+}
+
+/* imagen resumen general */
+
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  margin-left: 20px;
+  padding: 10px 0;
+}
+
+/* Navbar */
+header {
+  background-color: rgb(183, 253, 171);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Navbar - Lista de navegación */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* Enlaces del navbar */
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e8ffd2;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px !important;
+}
+
+
+main {
+  padding: 0.5rem;
+  flex-grow: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  overflow-y: auto;
+}
+
+/* Contenedor principal de la página */
+.home-container {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.home-container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Estilo para el párrafo */
+.parrafo {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+  text-align: center; 
+}
+
+/* Subtítulo */
+.parrafo p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 100%; 
+  width: auto; 
+}
+
+/* Contenedor para las tarjetas de opciones */
+.home-options {
+  display: flex;
+  justify-content: space-evenly; 
+  flex-wrap: wrap; 
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Estilo para cada tarjeta de opción */
+.option-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px !important; 
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.option-card h3 {
+  margin-bottom: 15px;
+}
+
+.option-card p {
+  margin-bottom: 20px;
+}
+
+/* .card-img {
+  width: 100%; 
+  height: auto; 
+  margin-bottom: 15px; 
+  border-radius: 8px; 
+} */
+
+/* Estilo para los enlaces (botones) */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00801a; /* Cambio de color al pasar el mouse */
+}
+
+.btn-primary {
+  background-color: #00801a;
+}
+
+.btn-primary:hover {
+  background-color: #00801a;
+}
+/* -------REGISTRO------- */
+
+/* Contenedor de registro */
+.register-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título principal */
+.register-container h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Texto y enlace de inicio de sesión */
+.login-cuenta {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-cuenta p {
+    font-size: 14px;
+    color: #666;
+}
+
+.login-cuenta a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-cuenta a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los campos de formulario */
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.register-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Botón de envío */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Sección de login social */
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Botones sociales */
+.social-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para cada botón social */
+.facebook-btn {
+    background-color: #3b5998;
+    color: white;
+}
+
+.google-btn {
+    background-color: #db4437;
+    color: white;
+}
+
+.apple-btn {
+    background-color: #000000;
+    color: white;
+}
+
+/* --------------METAS PRESUPUESTOS---------- */
+/* Contenedor principal de las metas */
+.metaspresupuestos {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título principal */
+.metaspresupuestos h3 {
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Lista de metas */
+.metas ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.metas li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los botones */
+.metas li button {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.metas li button:hover {
+  background-color: #e0a800;
+}
+
+/* Botones de completar, editar y eliminar */
+.metas li button:first-child {
+  background-color: #28a745 ;
+}
+
+.metas li button:first-child:hover {
+  background-color: #218838;
+}
+
+.metas li button:nth-child(2) {
+  background-color: #28a745;
+}
+
+.metas li button:nth-child(2):hover {
+  background-color: #218838;
+}
+
+.metas li button:last-child {
+  background-color: #dc3545;
+}
+
+.metas li button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Estilos para el formulario de nueva meta */
+.nueva-meta {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nueva-meta h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.nueva-meta div {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+}
+
+.nueva-meta div input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nueva-meta div button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nueva-meta div button:hover {
+  background-color: #0056b3;
+}
+
+
+/* ----------DASHBOARD---------- */
+
+/* Contenedor principal del Dashboard */
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;  
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Título principal */
+.dashboard-container h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de las secciones dentro del Dashboard */
+.dashboard-cosas {
+  display: flex;
+  flex-direction: column;  
+  gap: 20px; 
+  justify-content: flex-start;
+}
+
+/* Estilo para cada sección del Dashboard */
+.dashboard-cosas section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+}
+
+/* Título de cada sección */
+.dashboard-cosas section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Estilo para los componentes dentro de las secciones */
+.dashboard-cosas section > * {
+  margin-bottom: 20px;
+}
+
+/* ------------alertas--------- */
+
+/* Contenedor principal de Alertas y Recomendaciones */
+.alertas-recomendaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 800px;  
+  width: 100%;  
+}
+
+/* Título de Alertas y Recomendaciones */
+.alertas-recomendaciones h3 {
+  font-size: 24px;
+  color: #333;
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+/* Contenedor de las alertas (lista) */
+.alertas-p ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;  
+  text-align: center; 
+}
+
+.alertas-p li {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  max-width: 90%;  
+  margin-left: auto;  
+  margin-right: auto; 
+}
+
+/* ----------TRANSACCIONES-------- */
+
+.transacciones-container {
+  padding: 30px; 
+  max-width: 1100px; 
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título principal */
+.transacciones-container h1 {
+  text-align: center;
+  font-size: 26px; /* Aumenta el tamaño de la fuente */
+  color: #333;
+}
+
+/* Título de la lista de transacciones */
+.transacciones-container h3 {
+  font-size: 22px; /* Aumenta el tamaño de la fuente */
+  color: #333;
+  margin-bottom: 20px; /* Más espacio debajo del título */
+}
+
+/* Lista de transacciones */
+.transacciones ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 900px; 
+  margin: 0 auto;
+}
+
+.transacciones li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+  padding: 15px; 
+  margin-bottom: 15px; 
+  border-radius: 6px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo para los botones */
+.transacciones li button {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  padding: 8px 16px; 
+  border-radius: 4px;
+  margin-left: 10px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transacciones li button:hover {
+  background-color: #e0a800;
+}
+
+/* Botones de completar, editar y eliminar */
+.transacciones li button:first-child {
+  background-color: #28a745;
+}
+
+.transacciones li button:first-child:hover {
+  background-color: #218838;
+}
+
+.transacciones li button:nth-child(2) {
+  background-color: #28a745;
+}
+
+.transacciones li button:nth-child(2):hover {
+  background-color: #218838;
+}
+
+.transacciones li button:last-child {
+  background-color: #dc3545;
+}
+
+.transacciones li button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Estilos para el formulario de nueva transacción */
+.agregar-transaccion {
+  margin-top: 40px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.agregar-transaccion h3 {
+  font-size: 22px; 
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.agregar-transaccion form {
+  display: flex;
+  gap: 20px; 
+  flex-direction: column;
+}
+
+.agregar-transaccion form input {
+  padding: 12px; 
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.agregar-transaccion form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px; 
+  font-size: 15px; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.agregar-transaccion form button:hover {
+  background-color: #0056b3;
+}
+
+/* -------TAREAS------ */
+.tareas-container {
+  padding: 30px; 
+  max-width: 1000px; 
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título principal */
+.tareas-container h1 {
+  text-align: center;
+  font-size: 26px; 
+  color: #333;
+}
+
+/* Título de la lista de tareas */
+.tareas-container h3 {
+  font-size: 22px; 
+  color: #333;
+  margin-bottom: 20px; 
+}
+
+/* Lista de tareas */
+.tareas ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto;
+}
+
+.tareas li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+  padding: 15px; 
+  margin-bottom: 15px; 
+  border-radius: 6px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+ 
+}
+
+/* Estilo para el texto de las tareas completadas */
+.tareas li span {
+  flex-grow: 1;
+  font-size: 16px; 
+  color: #333;
+}
+
+.tareas li span[style="text-decoration: line-through;"] {
+  color: #888;
+}
+
+/* Boton editar */
+.tareas li button {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  padding: 8px 16px; 
+  border-radius: 4px;
+  margin-left: 10px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tareas li button:hover {
+  background-color: #e0a800;
+}
+
+/* Botones de completar y eliminar */
+
+.tareas li button:nth-child(2) {
+  background-color: #28a745;
+}
+
+.tareas li button:nth-child(2):hover {
+  background-color: #218838;
+}
+
+.tareas li button:last-child {
+  background-color: #dc3545;
+}
+
+.tareas li button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Estilos para el formulario de nueva tarea */
+.agregar-tarea {
+  margin-top: 40px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.agregar-tarea h3 {
+  font-size: 22px; 
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.agregar-tarea form {
+  display: flex;
+  gap: 10px; 
+  flex-direction: column;
+}
+
+.agregar-tarea form input {
+  padding: 12px; 
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.agregar-tarea form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px; 
+  font-size: 15px; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.agregar-tarea form button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Mejoro los títulos en los navegadores que lo soporten */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Mejoro la legibilidad con max-width en párrafos y listas */
+/* Prevengo palabras "huérfanas" en los navegadores que lo soporten */
+p,
+li {
+  max-width: 65ch;
+  text-wrap: pretty;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilos para el footer */
+footer {
+  display: flex; /* Usamos flexbox para alinear el contenido */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  padding: 1rem;
+  font-size: 0.8rem;
+  text-align: center; /* Asegura que el texto dentro del <p> también esté centrado */
+  background-color: rgb(183, 253, 171);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  margin: 0; /* Elimina cualquier margen adicional alrededor del <p> */
+}
+
+/* ----------------------------- */
+
+/* Dark Mode */
+  
+
+
+
