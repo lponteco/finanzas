@@ -4,11 +4,11 @@ import HomeScreen from './components/HomeScreen';
 import Dashboard from './components/Dashboard';
 import Transacciones from './components/Transacciones';
 import TareasHabitos from './components/TareasHabitos';
-import logo from './img/color-bw-03.svg';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 import './App.css';
 import Navbar  from './components/Navbar';
 import Footer from './components/Footer';
+import LoginScreen from './components/LoginScreen'
 
 function App() {
   const WIP_MESSAGE = "Página aún en construcción...";
@@ -23,6 +23,8 @@ function App() {
           <Routes>
             {/* Página principal cuando el usuario está logueado */}
             <Route path="/" element={<HomeScreen user={{ name: "Lu" }} />} />
+
+            <Route path="/login" element={<LoginScreen />} />
 
             {/* Secciones disponibles desde HomeScreen */}
             <Route path="/register" element={<RegisterScreen />} />

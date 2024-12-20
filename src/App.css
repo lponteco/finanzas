@@ -2,14 +2,12 @@
     MARK: CSS RESET
 */
 
-/* Simplifico la forma de aplicar tamaños */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Quito el espaciado predeterminado */
 * {
   margin: 0;
   padding: 0;
@@ -22,23 +20,19 @@ body {
   margin: 0;
 }
 
-/* imagen resumen general */
-
 svg {
   display: block;
   max-width: 100%;
 }
 
-/* Logo */
 .logo {
   width: 100px;
   margin-left: 20px;
   padding: 10px 0;
 }
 
-/* Navbar */
 header {
-  background-color: rgb(183, 253, 171);
+  background-color: #B7FDAB;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -47,7 +41,6 @@ header {
   box-sizing: border-box;
 }
 
-/* Navbar - Lista de navegación */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -65,7 +58,6 @@ nav ul li:last-child {
   margin-right: 0;
 }
 
-/* Enlaces del navbar */
 nav a {
   text-decoration: none;
   color: black;
@@ -84,7 +76,6 @@ h2 {
   font-size: 30px !important;
 }
 
-
 main {
   padding: 0.5rem;
   flex-grow: 1; 
@@ -95,7 +86,6 @@ main {
   overflow-y: auto;
 }
 
-/* Contenedor principal de la página */
 .home-container {
   text-align: center;
   width: 100%;
@@ -106,14 +96,12 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Título principal */
 .home-container h1 {
   font-size: 32px;
   margin-bottom: 10px;
-  color: #333;
+  color: black;
 }
 
-/* Estilo para el párrafo */
 .parrafo {
   display: flex; 
   justify-content: center; 
@@ -122,7 +110,6 @@ main {
   text-align: center; 
 }
 
-/* Subtítulo */
 .parrafo p {
   font-size: 18px;
   color: #666;
@@ -131,7 +118,6 @@ main {
   width: auto; 
 }
 
-/* Contenedor para las tarjetas de opciones */
 .home-options {
   display: flex;
   justify-content: space-evenly; 
@@ -140,7 +126,6 @@ main {
   margin-top: 20px;
 }
 
-/* Estilo para cada tarjeta de opción */
 .option-card {
   background-color: #fff;
   padding: 20px;
@@ -164,14 +149,6 @@ main {
   margin-bottom: 20px;
 }
 
-/* .card-img {
-  width: 100%; 
-  height: auto; 
-  margin-bottom: 15px; 
-  border-radius: 8px; 
-} */
-
-/* Estilo para los enlaces (botones) */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -185,7 +162,7 @@ main {
 }
 
 .btn:hover {
-  background-color: #00801a; /* Cambio de color al pasar el mouse */
+  background-color: #00801a; 
 }
 
 .btn-primary {
@@ -195,9 +172,9 @@ main {
 .btn-primary:hover {
   background-color: #00801a;
 }
+
 /* -------REGISTRO------- */
 
-/* Contenedor de registro */
 .register-container {
     background-color: #fff;
     padding: 30px;
@@ -207,7 +184,6 @@ main {
     max-width: 400px;
 }
 
-/* Título principal */
 .register-container h1 {
     font-size: 28px;
     text-align: center;
@@ -215,7 +191,6 @@ main {
     color: #333;
 }
 
-/* Texto y enlace de inicio de sesión */
 .login-cuenta {
     text-align: center;
     margin-bottom: 30px;
@@ -236,7 +211,6 @@ main {
     text-decoration: underline;
 }
 
-/* Estilo para los campos de formulario */
 .register-form input {
     width: 100%;
     padding: 10px;
@@ -252,7 +226,6 @@ main {
     outline: none;
 }
 
-/* Botón de envío */
 .submit-btn {
     width: 100%;
     padding: 12px;
@@ -269,7 +242,6 @@ main {
     background-color: #0056b3;
 }
 
-/* Sección de login social */
 .social-login {
     text-align: center;
     margin-top: 20px;
@@ -281,7 +253,6 @@ main {
     margin-bottom: 10px;
 }
 
-/* Botones sociales */
 .social-btn {
     width: 100%;
     padding: 12px;
@@ -297,7 +268,6 @@ main {
     opacity: 0.8;
 }
 
-/* Estilos para cada botón social */
 .facebook-btn {
     background-color: #3b5998;
     color: white;
@@ -314,7 +284,6 @@ main {
 }
 
 /* --------------METAS PRESUPUESTOS---------- */
-/* Contenedor principal de las metas */
 .metaspresupuestos {
   padding: 20px;
   max-width: 900px;
@@ -327,7 +296,6 @@ main {
   align-items: center;
 }
 
-/* Título principal */
 .metaspresupuestos h3 {
   text-align: center;
   font-size: 30px;
@@ -335,7 +303,6 @@ main {
   margin-bottom: 20px;
 }
 
-/* Lista de metas */
 .metas ul {
   list-style-type: none;
   padding: 0;
@@ -355,7 +322,6 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para los botones */
 .metas li button {
   background-color: #ffc107;
   color: white;
@@ -371,7 +337,6 @@ main {
   background-color: #e0a800;
 }
 
-/* Botones de completar, editar y eliminar */
 .metas li button:first-child {
   background-color: #28a745 ;
 }
@@ -396,7 +361,6 @@ main {
   background-color: #c82333;
 }
 
-/* Estilos para el formulario de nueva meta */
 .nueva-meta {
   margin-top: 30px;
   display: flex;
@@ -442,87 +406,72 @@ main {
   background-color: #0056b3;
 }
 
-
 /* ----------DASHBOARD---------- */
-
-/* Contenedor principal del Dashboard */
 .dashboard-container {
   padding: 20px;
-  max-width: 1200px;  
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Título principal */
-.dashboard-container h1 {
-  text-align: center;
-  font-size: 32px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Contenedor de las secciones dentro del Dashboard */
 .dashboard-cosas {
   display: flex;
-  flex-direction: column;  
   gap: 20px; 
-  justify-content: flex-start;
 }
 
-/* Estilo para cada sección del Dashboard */
-.dashboard-cosas section {
+section {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  width: 100%; 
+  width: 100%;
 }
 
-/* Título de cada sección */
-.dashboard-cosas section h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-/* Estilo para los componentes dentro de las secciones */
-.dashboard-cosas section > * {
-  margin-bottom: 20px;
-}
-
-/* ------------alertas--------- */
-
-/* Contenedor principal de Alertas y Recomendaciones */
-.alertas-recomendaciones {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  padding: 20px;
+.alertas-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  max-width: 800px;  
-  width: 100%;  
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 500px;
+  z-index: 999;
+  display: none; 
 }
 
-/* Título de Alertas y Recomendaciones */
-.alertas-recomendaciones h3 {
-  font-size: 24px;
-  color: #333;
-  text-align: center; 
-  margin-bottom: 20px;
+.alertas-popup.active {
+  display: block;
 }
 
-/* Contenedor de las alertas (lista) */
+.alertas-popup .close-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.alertas-popup .close-btn:hover {
+  background-color: #d32f2f;
+}
+
 .alertas-p ul {
   list-style-type: none;
   padding: 0;
-  width: 100%;  
+  width: 100%;
   text-align: center; 
+  margin: 0;
 }
 
 .alertas-p li {
@@ -533,9 +482,28 @@ main {
   background-color: #f8f9fa;
   border-radius: 5px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  max-width: 90%;  
-  margin-left: auto;  
+  max-width: 80%; 
+  margin-left: auto; 
   margin-right: auto; 
+}
+
+.alertas-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.alertas-btn-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.alertas-btn-container button:hover {
+  background-color: #0056b3;
 }
 
 /* ----------TRANSACCIONES-------- */
@@ -552,21 +520,18 @@ main {
   align-items: center;
 }
 
-/* Título principal */
 .transacciones-container h1 {
   text-align: center;
-  font-size: 26px; /* Aumenta el tamaño de la fuente */
+  font-size: 26px; 
   color: #333;
 }
 
-/* Título de la lista de transacciones */
 .transacciones-container h3 {
-  font-size: 22px; /* Aumenta el tamaño de la fuente */
+  font-size: 22px; 
   color: #333;
-  margin-bottom: 20px; /* Más espacio debajo del título */
+  margin-bottom: 20px; 
 }
 
-/* Lista de transacciones */
 .transacciones ul {
   list-style-type: none;
   padding: 0;
@@ -586,7 +551,6 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Estilo para los botones */
 .transacciones li button {
   background-color: #ffc107;
   color: white;
@@ -602,7 +566,6 @@ main {
   background-color: #e0a800;
 }
 
-/* Botones de completar, editar y eliminar */
 .transacciones li button:first-child {
   background-color: #28a745;
 }
@@ -627,7 +590,6 @@ main {
   background-color: #c82333;
 }
 
-/* Estilos para el formulario de nueva transacción */
 .agregar-transaccion {
   margin-top: 40px; 
   display: flex;
@@ -684,21 +646,18 @@ main {
   align-items: center;
 }
 
-/* Título principal */
 .tareas-container h1 {
   text-align: center;
   font-size: 26px; 
   color: #333;
 }
 
-/* Título de la lista de tareas */
 .tareas-container h3 {
   font-size: 22px; 
   color: #333;
   margin-bottom: 20px; 
 }
 
-/* Lista de tareas */
 .tareas ul {
   list-style-type: none;
   padding: 0;
@@ -719,7 +678,6 @@ main {
  
 }
 
-/* Estilo para el texto de las tareas completadas */
 .tareas li span {
   flex-grow: 1;
   font-size: 16px; 
@@ -730,7 +688,6 @@ main {
   color: #888;
 }
 
-/* Boton editar */
 .tareas li button {
   background-color: #ffc107;
   color: white;
@@ -745,8 +702,6 @@ main {
 .tareas li button:hover {
   background-color: #e0a800;
 }
-
-/* Botones de completar y eliminar */
 
 .tareas li button:nth-child(2) {
   background-color: #28a745;
@@ -764,7 +719,6 @@ main {
   background-color: #c82333;
 }
 
-/* Estilos para el formulario de nueva tarea */
 .agregar-tarea {
   margin-top: 40px; 
   display: flex;
@@ -810,7 +764,6 @@ main {
 
 
 
-/* Mejoro los títulos en los navegadores que lo soporten */
 h1,
 h2,
 h3,
@@ -820,8 +773,7 @@ h6 {
   text-wrap: balance;
 }
 
-/* Mejoro la legibilidad con max-width en párrafos y listas */
-/* Prevengo palabras "huérfanas" en los navegadores que lo soporten */
+
 p,
 li {
   max-width: 65ch;
@@ -834,27 +786,463 @@ html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Estilos para el footer */
+
 footer {
-  display: flex; /* Usamos flexbox para alinear el contenido */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   padding: 1rem;
   font-size: 0.8rem;
-  text-align: center; /* Asegura que el texto dentro del <p> también esté centrado */
+  text-align: center; 
   background-color: rgb(183, 253, 171);
   width: 100%;
   box-sizing: border-box;
 }
 
 footer p {
-  margin: 0; /* Elimina cualquier margen adicional alrededor del <p> */
+  margin: 0; 
 }
 
-/* ----------------------------- */
+.error-message {
+  color: red !important;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block; 
+}
 
 /* Dark Mode */
-  
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #333;
+}
+
+body.dark-mode nav a {
+  color: #e0e0e0;
+}
+
+body.dark-mode nav a:hover {
+  background-color: #444;
+}
+
+body.dark-mode .parrafo p {
+  color: #e0e0e0;
+}
+
+body.dark-mode .home-container,
+body.dark-mode .register-container,
+body.dark-mode .metaspresupuestos,
+body.dark-mode .dashboard-container,
+body.dark-mode .alertas-recomendaciones,
+body.dark-mode .transacciones-container,
+body.dark-mode .tareas-container {
+  background-color: #222;
+  color: #e0e0e0;
+}
+
+body.dark-mode .home-container h1,
+body.dark-mode .register-container h1,
+body.dark-mode .metaspresupuestos h3,
+body.dark-mode .dashboard-container h1,
+body.dark-mode .alertas-recomendaciones h3,
+body.dark-mode .transacciones-container h1,
+body.dark-mode .tareas-container h1 {
+  color: white;
+}
+
+body.dark-mode .home-options .option-card {
+  background-color: #e0e0e0;
+  color: #444;
+}
 
 
+body.dark-mode .btn,
+body.dark-mode .submit-btn,
+body.dark-mode .social-btn,
+body.dark-mode .transacciones li button,
+body.dark-mode .metas li button,
+body.dark-mode .tareas li button {
+  background-color: #444;
+  color: white;
+}
 
+body.dark-mode .btn:hover,
+body.dark-mode .submit-btn:hover,
+body.dark-mode .social-btn:hover,
+body.dark-mode .transacciones li button:hover,
+body.dark-mode .metas li button:hover,
+body.dark-mode .tareas li button:hover {
+  background-color: #666;
+}
+
+body.dark-mode .register-container {
+  background-color: #e0e0e0;
+}
+
+body.dark-mode .dashboard-container {
+  background-color: #121212;
+}
+
+body.dark-mode div.metaspresupuestos {
+  background-color: #222;
+}
+
+body.dark-mode .metas2 {
+ background-color: #222;
+}
+
+body.dark-mode .alertas-popup h2 {
+  color: black !important; 
+}
+
+body.dark-mode .alertas-popup ul {
+  background-color: white;
+}
+
+body.dark-mode .dashboard-container h2 {
+  color: white;
+}
+
+body.dark-mode .dashboard-cosas section li {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode .transacciones-container h3 {
+  color: white;
+}
+
+body.dark-mode .tareas-container h3 {
+  color: white;
+}
+
+body.dark-mode .register-container h2, h3{
+  color: black;
+}
+
+body.dark-mode .register-container p, a{
+  color: black;
+}
+
+body.dark-mode .register-form input:focus,
+body.dark-mode .nueva-meta div input:focus,
+body.dark-mode .agregar-transaccion form input:focus,
+body.dark-mode .agregar-tarea form input:focus {
+  border-color: #333;
+}
+
+body.dark-mode .alertas-p li {
+  background-color: #333;
+  color: #e0e0e0;
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .metas li button:first-child,
+body.dark-mode .transacciones li button:first-child,
+body.dark-mode .tareas li button:nth-child(2) {
+  background-color: #444;
+}
+
+body.dark-mode button {
+  background-color: #444;
+}
+
+body.dark-mode button:hover {
+  background-color: #666;
+}
+
+body.dark-mode .close-btn {
+  background-color: #444;
+  color: white;
+}
+
+body.dark-mode .close-btn:hover {
+  background-color: #666;
+}
+
+
+body.dark-mode span {
+  color: black;
+}
+
+body.dark-mode .metas li button:first-child:hover,
+body.dark-mode .transacciones li button:first-child:hover,
+body.dark-mode .tareas li button:nth-child(2):hover {
+  background-color: #666;
+}
+
+body.dark-mode .metas li button:last-child,
+body.dark-mode .transacciones li button:last-child,
+body.dark-mode .tareas li button:last-child {
+  background-color: #444;
+}
+
+body.dark-mode .metas li button:last-child:hover,
+body.dark-mode .transacciones li button:last-child:hover,
+body.dark-mode .tareas li button:last-child:hover {
+  background-color: #666;
+}
+
+body.dark-mode footer {
+  background-color: #333;
+}
+
+body.dark-mode footer p {
+  color: #e0e0e0;
+}
+
+/* ----------------------------------- */
+@media (max-width: 480px) {
+  .logo {
+    width: 80px;
+    margin-left: 0;
+    display: block;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 8px 15px;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  main {
+    padding: 0.5rem;
+    flex-direction: column;
+  }
+
+  .option-card {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .btn,
+  .btn-primary,
+  .submit-btn,
+  .social-btn,
+  .transacciones li button,
+  .tareas li button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .register-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .register-container h1 {
+    font-size: 24px;
+  }
+
+  .login-cuenta p {
+    font-size: 12px;
+  }
+
+  .register-form input {
+    font-size: 14px;
+  }
+
+  .alertas-popup {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .alertas-p li {
+    font-size: 14px;
+  }
+
+  .alertas-btn-container button {
+    font-size: 14px;
+  }
+
+  .metaspresupuestos {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .metas li {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .transacciones-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .transacciones li {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .tareas-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .tareas li {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .agregar-tarea form,
+  .agregar-meta form,
+  .agregar-transaccion form {
+    gap: 10px;
+  }
+
+  .agregar-tarea form input,
+  .agregar-meta form input,
+  .agregar-transaccion form input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 90px;
+    margin-left: 0;
+    display: block;
+    margin: 0 auto; 
+  }
+
+  header {
+    padding: 12px 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+
+  main {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .option-card {
+    width: 100% !important;
+  }
+
+  .btn,
+  .btn-primary,
+  .submit-btn,
+  .social-btn,
+  .transacciones li button,
+  .tareas li button {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+
+  .register-container {
+    max-width: 100%;
+    padding: 25px;
+  }
+
+  .register-container h1 {
+    font-size: 26px;
+  }
+
+  .login-cuenta p {
+    font-size: 14px;
+  }
+
+  .register-form input {
+    font-size: 16px;
+  }
+
+  .alertas-popup {
+    width: 85%;
+    max-width: 450px;
+  }
+
+  .alertas-p li {
+    font-size: 15px;
+  }
+
+  .alertas-btn-container button {
+    font-size: 16px;
+  }
+
+  .metaspresupuestos {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .metas li {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .transacciones-container {
+    padding: 25px;
+    max-width: 100%;
+  }
+
+  .transacciones li {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .tareas-container {
+    padding: 25px;
+    max-width: 100%;
+  }
+
+  .tareas li {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .agregar-tarea form,
+  .agregar-meta form,
+  .agregar-transaccion form {
+    gap: 15px;
+  }
+
+  .agregar-tarea form input,
+  .agregar-meta form input,
+  .agregar-transaccion form input {
+    font-size: 16px;
+  }
+}

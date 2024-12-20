@@ -8,7 +8,6 @@ function AlertasRecomendaciones() {
 
     return (
         <div className='alertas-recomendaciones'>
-            <h3>Alertas y Recomendaciones</h3>
             
             <div className='alertas-p'>
             <ul>
